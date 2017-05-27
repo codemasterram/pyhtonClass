@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<!-- saved from url=(0116)https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>What Every New Python/Django Web Developer Should Know in 3 Months | pragmatic startup</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://pragmaticstartup.wordpress.com/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://s0.wp.com/wp-content/themes/pub/truly-minimal/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="pragmatic startup » Feed" href="https://pragmaticstartup.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="pragmatic startup » Comments Feed" href="https://pragmaticstartup.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="pragmatic startup » What Every New Python/Django Web Developer Should Know in 3 Months Comments Feed" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/feed/">
+	<script defer="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/beacon.js"></script><script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s1.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1488818651h&ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="all-css-0-1" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource" type="text/css" media="all">
+<link rel="stylesheet" id="truly-minimal-droid-serif-css" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="truly-minimal-droid-sans-css" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="all-css-4-1" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(1)" type="text/css" media="all">
+<link rel="stylesheet" id="print-css-5-1" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/global-print.css" type="text/css" media="print">
+<link rel="stylesheet" id="all-css-6-1" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(2)" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(3)"></script>
+<link rel="stylesheet" id="all-css-0-2" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pragmaticstartup.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Display Current Git Branch for Mac Bash iTerm" href="https://pragmaticstartup.wordpress.com/2012/08/09/display-current-git-branch-for-mac-bash-iterm/">
+<link rel="next" title="Analyzing a Business Idea, A Developer’s Perspective" href="https://pragmaticstartup.wordpress.com/2012/08/28/analyzing-a-business-idea-a-developers-perspective/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/">
+<link rel="shortlink" href="http://wp.me/p1lZ0Z-8O">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fpragmaticstartup.wordpress.com%2F2012%2F08%2F25%2Fwhat-every-new-pythondjango-web-developer-should-know-in-3-months%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fpragmaticstartup.wordpress.com%2F2012%2F08%2F25%2Fwhat-every-new-pythondjango-web-developer-should-know-in-3-months%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="What Every New Python/Django Web Developer Should Know in 3 Months">
+<meta property="og:url" content="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/">
+<meta property="og:description" content="This is a collection of things I think any beginner web developer working on the Python/Django stack ought to know. This assumes zero knowledge in web development or programming to begin with. Web …">
+<meta property="article:published_time" content="2012-08-25T05:14:11+00:00">
+<meta property="article:modified_time" content="2012-08-25T05:27:10+00:00">
+<meta property="og:site_name" content="pragmatic startup">
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:card" content="summary">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png">
+<link rel="openid.server" href="https://pragmaticstartup.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://pragmaticstartup.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://pragmaticstartup.wordpress.com/osd.xml" title="pragmatic startup">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+<meta name="theme-color" content="#ffffff">
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="pragmatic startup"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="ideas, startups, causes"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://pragmaticstartup.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico"><meta name="title" content="What Every New Python/Django Web Developer Should Know in 3 Months | pragmatic startup on WordPress.com">
+<meta name="description" content="This is a collection of things I think any beginner web developer working on the Python/Django stack ought to know. This assumes zero knowledge in web development or programming to begin with. Web Related What is a GET and POST request 200/301/302/403/404/500 status codes What is a cookie and how is it used Learn how…">
+ 		<script type="text/javascript">
+		var _ipw_custom = {
+				wordAds: '0',
+				adSafe: '1',
+				domain: 'pragmaticstartup.wordpress.com',
+				pageURL: 'https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/'
+			};
+		</script>
+ 		<script type="text/javascript" src="https://s.pubmine.com/head.js"></script>
+		<script type="text/javascript" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/publishertag.js"></script><link rel="amphtml" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/ga.js"></script>
+<script type="text/javascript" async="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(4)"></script><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/services.css"><script type="text/javascript" async="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(5)"></script></head>
+
+<body class="post-template-default single single-post postid-546 single-format-standard mp6 customizer-styles-applied sidebar-right highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header clear" role="banner">
+		<hgroup>
+						<h1 class="site-title"><a href="https://pragmaticstartup.wordpress.com/" title="pragmatic startup" rel="home">pragmatic startup</a></h1>
+			<h2 class="site-description">ideas, startups, causes</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="navigation-main" role="navigation">
+			<h1 class="menu-toggle">Menu</h1>
+			<div class="screen-reader-text skip-link"><a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#content" title="Skip to content">Skip to content</a></div>
+
+			<div class="menu-main-1-container"><ul id="menu-main-1" class="menu"><li id="menu-item-1398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1398"><a href="https://pragmaticstartup.wordpress.com/">Home</a></li>
+<li id="menu-item-1399" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1399"><a href="https://pragmaticstartup.wordpress.com/about/">About</a></li>
+</ul></div>		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+		
+			
+<article id="post-546" class="post-546 post type-post status-publish format-standard hentry category-django category-python category-startups category-tutorial">
+	<header class="entry-header">
+		<h1 class="entry-title">What Every New Python/Django Web Developer Should Know in 3&nbsp;Months</h1>
+		<div class="entry-meta">
+			Posted on <a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/" title="5:14 am" rel="bookmark"><time class="entry-date" datetime="2012-08-25T05:14:11+00:00">August 25, 2012</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://pragmaticstartup.wordpress.com/author/nychng/" title="View all posts by Nai" rel="author">Nai</a></span></span>		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>This is a collection of things I think any beginner web developer working on the Python/Django stack ought to know. This assumes zero knowledge in web development or programming to begin with.</p>
+<ol>
+<li>Web Related
+<ol>
+<li>What is a GET and POST request</li>
+<li>200/301/302/403/404/500 status codes</li>
+<li>What is a cookie and how is it used</li>
+<li>Learn how to search and read documentation</li>
+<li>Basic SEO knowledge
+<ol>
+<li>Best book to read: <a href="http://www.amazon.com/The-Art-SEO-Mastering-Optimization/dp/0596518862">The Art of SEO</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Frontend
+<ol>
+<li>How a page is loaded in the browser (DOM)</li>
+<li>Working/basic knowledge of HTML/CSS/JS – You will learn this by osmosis</li>
+<li>What is AJAX</li>
+<li>What is HTML5</li>
+<li>Basic UX/UI understanding
+<ol>
+<li>Best book to read: <a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1345870262&amp;sr=1-1&amp;keywords=dont+make+me+thing">Don’t make me Think</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Python
+<ol>
+<li>Write <a href="http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html">Fizzbuzz</a></li>
+<li>Read <a href="http://learnpythonthehardway.org/">Learn Python the Hard Way</a> then an intermediate book like Dive into Python or one of the O’Reilly series</li>
+</ol>
+</li>
+<li>Django
+<ol>
+<li>Do the tutorial project at <a href="https://www.djangoproject.com/">djangoproject.com</a></li>
+<li>Read <a href="http://www.amazon.com/Definitive-Guide-Django-Development-Right/dp/143021936X/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1345870442&amp;sr=1-1&amp;keywords=django+web+development+done+right">Definitive Guide to Django Development Done Right</a></li>
+<li>Be able to setup a new project from scratch using virtualenv locally with a skeletal folder structure and settings that caters to a production and development environment</li>
+<li>What a view function does
+<ol>
+<li>GET/POST paradigm within a view function</li>
+</ol>
+</li>
+<li>What a model class does</li>
+<li>What does a template do
+<ol>
+<li>What is template inheritance</li>
+</ol>
+</li>
+<li><span style="line-height:24px;">Basic Regex and URLS</span></li>
+<li>How do urls, views, models and template relate with one another</li>
+<li>Difference between model forms and forms
+<ol>
+<li>How does form validation occur</li>
+</ol>
+</li>
+<li>How to write a test that tests the view functions, models and utility methods</li>
+<li>How to debug and find the source of a problem</li>
+</ol>
+</li>
+<li>Database/Models
+<ol>
+<li>How to model Foreignkey relations</li>
+<li>How to model M2M relations</li>
+<li>Basic data types</li>
+</ol>
+</li>
+<li>Tools in your Employ
+<ol>
+<li>iPython</li>
+<li>South
+<ol>
+<li>How does a migration work</li>
+<li>How to do an initial migration</li>
+<li>How to migrate subsequent changes to a schema</li>
+<li>Trouble shoot migration conflicts</li>
+</ol>
+</li>
+<li>Git</li>
+<li>IDE of choice, preferably VIM</li>
+<li>Firebug</li>
+<li>Fabric</li>
+</ol>
+</li>
+<li>Processes
+<ol>
+<li>Deployment process at your team. How it works, what git hooks are used for what purposes. What fabric scripts do what etc</li>
+<li><a href="https://github.com/nvie/gitflow">Git Flow</a>
+<ol>
+<li>How to add, commit, release, rollback, fix, merg and conflict management</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Soft Skills
+<ol>
+<li>Communication with product owners</li>
+<li>Communication with colleagues</li>
+<li>Cultivating a <a href="http://sivers.org/book/Mindset">Growth mindset</a></li>
+</ol>
+</li>
+<li>Graduating Project!
+<ol>
+<li>Create a one page Django project that will allow me to:
+<ol>
+<li>View all the users on the project</li>
+<li>Edit the details of the users</li>
+<li>Create a new user</li>
+<li>Delete a user</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p><strong>A note on doing too much reading:</strong></p>
+<p>Oftentimes as a beginner, we’re overwhelmed by the amount of information we need to do something. The knee jerk reaction, a badge of the fine education doctrines what have been ingrained in us, is to read about the topic/subject. I find this hits a wall of diminishing returns quickly.</p>
+<p>For the reading to be truly effective, you need a certain amount of wisdom to absorb it. This can only be done by reading backwards. What this means is that say you’re tasked to create a dashboard page from scratch. In your mind you’ll probably think something like: <em>whoaaaa, I have on idea how to do this</em>. <em>I need to do some research!</em>&nbsp;And then you try to do random reading at djangoproject or various books and then bite off more than you can chew. The human brain has a tendency to make things more complex than it really is. The right question you should be asking in your mind is: <em>how do I first load a page and then present a form on this page to manipulate data?</em> This will make your reading much more directed and effective.</p>
+			<style type="text/css">
+			div.wpmrec2x{max-width:610px;}
+			div.wpmrec2x div.u > div{float:left;margin-right:10px;}
+			div.wpmrec2x div.u > div:nth-child(3n){margin-right:0px;}
+			</style>		<div class="wpcnt">
+			<div class="wpa wpmrec wpmrec2x" style="display: inline-block !important;">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">
+								<script type="text/javascript" id="s26942">
+				(function(g,$){if("undefined"!=typeof g.__ATA){
+					g.__ATA.initAd({sectionId:26942, width:300, height:250});
+					g.__ATA.initAd({sectionId:114160, width:300, height:250});
+				}})(window,jQuery);
+			</script>
+				</div>
+				        <div id="crt-1516497576" style="width: 300px; height: 250px; display: block !important;"><iframe src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/afr.html" id="crt-1516497576_cto_iframe" frameborder="0" marginwidth="0px" marginheight="0px" width="100%" height="100%" scrolling="no"></iframe></div>
+        <script type="text/javascript">
+        var o = document.getElementById('crt-1516497576');
+        if ("undefined"!=typeof Criteo) {
+            var p = o.parentNode;
+            p.style.setProperty('display', 'inline-block', 'important');
+            o.style.setProperty('display', 'block', 'important');
+            Criteo.DisplayAcceptableAdIfAdblocked({zoneid:388248,containerid:"crt-1516497576",collapseContainerIfNotAdblocked:true,"callifnotadblocked": function () {var o = document.getElementById('crt-1516497576'); o.style.setProperty('display','none','important');o.style.setProperty('visbility','hidden','important'); }
+        });
+        } else {
+            o.style.setProperty('display', 'none', 'important');
+            o.style.setProperty('visibility', 'hidden', 'important');
+        }
+        </script>
+			</div>
+		</div><div id="jp-post-flair" class="sharedaddy sd-like-enabled"><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-20015769-546-5929ce0863341" data-src="//widgets.wp.com/likes/#blog_id=20015769&amp;post_id=546&amp;origin=pragmaticstartup.wordpress.com&amp;obj_id=20015769-546-5929ce0863341" data-name="like-post-frame-20015769-546-5929ce0863341"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-20015769-546-5929ce0863341" height="55px" width="100%" frameborder="0" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource.html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="3" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://pragmaticstartup.wordpress.com/2011/02/13/how-i-am-learning-python-from-scratch/" title="How I am learning Python from Scratch
+
+First the context - I come from a finance major. My background in application programming is close to zero. I am probably a typical &#39;business&#39; guy with no technical skills and no MBA. At my last startup, I spent approximately 1.5 years on and off working in T-SQL on SQL…" rel="nofollow" data-origin="546" data-position="0">How I am learning Python from Scratch</a></span><span class="jp-relatedposts-post-context">In "python"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="1100" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://pragmaticstartup.wordpress.com/2013/05/18/to-learn-must-one-always-be-in-a-state-of-discomfort/" title="To Learn, Must One Always Be In A State Of Discomfort?
+
+I&#39;ve been coding Django apps for about 2 years now. I can initiate a server running Arch Linux, get it up and running and deploy my Django app in a couple of hours. I code using Vim. I use zsh as my default terminal. I know enough unix commands to…" rel="nofollow" data-origin="546" data-position="1">To Learn, Must One Always Be In A State Of Discomfort?</a></span><span class="jp-relatedposts-post-context">In "lessons"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="591" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://pragmaticstartup.wordpress.com/2012/10/19/a-list-of-sites-for-people-looking-to-get-into-web-developmentprogramming/" title="A List of Sites for People Looking to get into Web Development/Programming
+
+Just a list of resources I&#39;ve come across. Thought I put them all in one list. If you come across anything new, that&#39;s good, do add them to the comments and I&#39;ll update this list accordingly. Bootcamps Dev BootCamp (Rails) Catalyst (HTML/JS) Code Fellows (Rails) Thinkful (Front End) Massive Online…" rel="nofollow" data-origin="546" data-position="2">A List of Sites for People Looking to get into Web Development/Programming</a></span><span class="jp-relatedposts-post-context">In "tutorial"</span></p></div></div></div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in <a href="https://pragmaticstartup.wordpress.com/category/django/" rel="category tag">django</a>, <a href="https://pragmaticstartup.wordpress.com/category/python/" rel="category tag">python</a>, <a href="https://pragmaticstartup.wordpress.com/category/startups/" rel="category tag">startups</a>, <a href="https://pragmaticstartup.wordpress.com/category/tutorial/" rel="category tag">tutorial</a>. Bookmark the <a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/" title="Permalink to What Every New Python/Django Web Developer Should Know in 3 Months" rel="bookmark">permalink</a>.
+			</footer><!-- .entry-meta -->
+	</article><!-- #post-## -->
+
+				<nav role="navigation" id="nav-below" class="navigation-post">
+		<h1 class="screen-reader-text">Post navigation</h1>
+
+	
+		<div class="previous"><a href="https://pragmaticstartup.wordpress.com/2012/08/09/display-current-git-branch-for-mac-bash-iterm/" rel="prev"><span class="meta-nav">←</span> Display Current Git Branch for Mac Bash&nbsp;iTerm</a></div>		<div class="next"><a href="https://pragmaticstartup.wordpress.com/2012/08/28/analyzing-a-business-idea-a-developers-perspective/" rel="next">Analyzing a Business Idea, A Developer’s Perspective <span class="meta-nav">→</span></a></div>
+	
+	</nav><!-- #nav-below -->
+	
+			
+
+	<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			9 thoughts on “<span>What Every New Python/Django Web Developer Should Know in 3&nbsp;Months</span>”		</h2>
+
+		
+		<ol class="comment-list">
+				<li class="comment byuser comment-author-dtaspinar even thread-even depth-1 highlander-comment" id="li-comment-281">
+		<article id="comment-281" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/7c060d52bbe0c18c41b8231aba5679a4" class="avatar avatar-58 grav-hashed grav-hijack" height="58" width="58" id="grav-7c060d52bbe0c18c41b8231aba5679a4-0">					<cite class="fn">dtaspinar</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-281"><time datetime="2012-08-29T16:13:49+00:00">
+					on August 29, 2012 at 4:13 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Reblogged this on <a href="http://dtaspinar.wordpress.com/2012/08/29/what-every-new-pythondjango-web-developer-should-know-in-3-months/" rel="nofollow">CompSci log</a>.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=281#respond" onclick="return addComment.moveForm( &quot;comment-281&quot;, &quot;281&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to dtaspinar">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-299">
+		<article id="comment-299" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/alecs_normal.png" class="avatar avatar-58" height="58" width="58">					<cite class="fn"><a href="http://twitter.com/bel_alex" rel="external nofollow" class="url">alex (@bel_alex)</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-299"><time datetime="2012-09-10T09:47:50+00:00">
+					on September 10, 2012 at 9:47 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Do you really believe that this can be studied in 3 month ?<br>
+regex, DOM, vim, html5, git, fabric …<br>
+You must be crazy.<br>
+Don’t forget to add C/C++/Cython here.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=299#respond" onclick="return addComment.moveForm( &quot;comment-299&quot;, &quot;299&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to alex (@bel_alex)">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment even depth-2 highlander-comment" id="li-comment-349">
+		<article id="comment-349" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/picture" class="avatar avatar-58" height="58" width="58">					<cite class="fn"><a href="http://www.facebook.com/justin.gieselbach" rel="external nofollow" class="url">Justin Gieselbach</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-349"><time datetime="2012-11-15T13:37:41+00:00">
+					on November 15, 2012 at 1:37 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>I agree. Ambitious but still hectic!</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=349#respond" onclick="return addComment.moveForm( &quot;comment-349&quot;, &quot;349&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to Justin Gieselbach">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-nychng bypostauthor odd alt thread-even depth-1 highlander-comment" id="li-comment-300">
+		<article id="comment-300" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/1c631e1e0c46dc34f3c7b22133ae8531" class="avatar avatar-58 grav-hashed grav-hijack" height="58" width="58" id="grav-1c631e1e0c46dc34f3c7b22133ae8531-0">					<cite class="fn"><a href="https://pragmaticstartup.wordpress.com/" rel="external nofollow" class="url">Nai</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-300"><time datetime="2012-09-11T15:24:57+00:00">
+					on September 11, 2012 at 3:24 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Ambitious but not crazy. I imagine the above is exactly what Rails bootcamps like <a href="http://devbootcamp.com/" rel="nofollow">http://devbootcamp.com/</a> and <a href="http://www.appacademy.io/" rel="nofollow">http://www.appacademy.io/</a> will teach you (the equivalents) in about 10 weeks.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=300#respond" onclick="return addComment.moveForm( &quot;comment-300&quot;, &quot;300&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to Nai">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-alex4rom even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-305">
+		<article id="comment-305" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/fe0f9900964c4cce4f2f0c397a2a6c6f" class="avatar avatar-58 grav-hashed grav-hijack" height="58" width="58" id="grav-fe0f9900964c4cce4f2f0c397a2a6c6f-0">					<cite class="fn">ore</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-305"><time datetime="2012-09-21T12:46:23+00:00">
+					on September 21, 2012 at 12:46 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Reblogged this on <a href="http://trashat.wordpress.com/2012/09/21/242/" rel="nofollow">Trash@</a>.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=305#respond" onclick="return addComment.moveForm( &quot;comment-305&quot;, &quot;305&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to ore">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href="http://techbie.wordpress.com/2013/10/17/what-evry-new-pythondjango-developer-should-learn/" rel="external nofollow" class="url">What evry new python/django developer should learn? | Techbie's Weblog</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-bigheight odd alt thread-even depth-1 highlander-comment" id="li-comment-904">
+		<article id="comment-904" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/30fda14832349dda80ddde4713c66226" class="avatar avatar-58 grav-hashed grav-hijack" height="58" width="58" id="grav-30fda14832349dda80ddde4713c66226-0">					<cite class="fn">bigheight</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-904"><time datetime="2014-01-03T05:36:19+00:00">
+					on January 3, 2014 at 5:36 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Thanks for sharing this informatics blog i am bookmark this blog. need some more post</p>
+<p>See My Site  <a href="http://www.bigheights.com/" rel="nofollow">Web Designing in dwarka</a></p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=904#respond" onclick="return addComment.moveForm( &quot;comment-904&quot;, &quot;904&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to bigheight">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-2042">
+		<article id="comment-2042" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/91c247d8d64e5a4c4a286efc094d4773" class="avatar avatar-58 grav-hashed grav-hijack" height="58" width="58" id="grav-91c247d8d64e5a4c4a286efc094d4773-0">					<cite class="fn"><a href="http://jimchim.me/" rel="external nofollow" class="url">J.C</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-2042"><time datetime="2014-12-19T07:04:55+00:00">
+					on December 19, 2014 at 7:04 am					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>+1 for the over-reading, </p>
+<p>One thing for new readers : It seems that South is deprecated in the latest version of Django?</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=2042#respond" onclick="return addComment.moveForm( &quot;comment-2042&quot;, &quot;2042&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to J.C">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-2 highlander-comment" id="li-comment-2263">
+		<article id="comment-2263" class="comment clear">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/7add8c9435490bb0981867a992dd1baf" class="avatar avatar-58 grav-hashed grav-hijack" height="58" width="58" id="grav-7add8c9435490bb0981867a992dd1baf-0">					<cite class="fn">Oluwafemi</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-2263"><time datetime="2015-08-19T20:57:11+00:00">
+					on August 19, 2015 at 8:57 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Yes. The latest Django version comes with its own migration.</p>
+</div>
+
+			<div class="reply">
+				<a rel="nofollow" class="comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/?replytocom=2263#respond" onclick="return addComment.moveForm( &quot;comment-2263&quot;, &quot;2263&quot;, &quot;respond&quot;, &quot;546&quot; )" aria-label="Reply to Oluwafemi">Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+		<div id="respond" class="comment-respond js">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://pragmaticstartup.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="e97f4efc34"><input type="hidden" name="_wp_http_referer" value="/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arial, Helvetica, Tahoma, Verdana, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none solid rgba(0, 0, 0, 0.7); word-spacing: 0px; text-indent: 0px; line-height: 28px; width: 608.312px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 48px; overflow: hidden; word-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(11).html" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/ad516503a11cd5ca435acc9bb6523536" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;wordpress&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;twitter&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;facebook&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;googleplus&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog" style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="546" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="88119a9c5c"></p>
+<input type="hidden" name="genseq" value="1495911944">
+<p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1495911958504"></form>
+			</div><!-- #respond -->
+	<div style="clear: both"></div>
+</div><!-- #comments -->
+
+		
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+				<aside id="search-3" class="widget widget_search"><h1 class="widget-title">Search</h1>	<form method="get" id="searchform" class="searchform" action="https://pragmaticstartup.wordpress.com/" role="search">
+		<label for="s" class="screen-reader-text">Search</label>
+		<input type="search" class="field" name="s" value="" id="s" placeholder="Search …">
+		<input type="submit" class="submit" id="searchsubmit" value="Search">
+	</form>
+</aside><aside id="top-posts-4" class="widget widget_top-posts"><h1 class="widget-title">Top Posts &amp; Pages</h1><ul>				<li>
+										<a href="https://pragmaticstartup.wordpress.com/2013/04/08/12-seo-tips-for-django/" class="bump-view" data-bump-view="tp">
+						13 SEO Tips for Django					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2012/06/26/django-guardian-a-full-access-control-logic-acl-example/" class="bump-view" data-bump-view="tp">
+						Django-Guardian: A Full Access Control Logic (ACL) Example					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/" class="bump-view" data-bump-view="tp">
+						What Every New Python/Django Web Developer Should Know in 3 Months					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2014/02/05/loading-images-in-uicollectionviewcell-naive-to-the-clever/" class="bump-view" data-bump-view="tp">
+						Loading Images in UICollectionViewCell: Naive to the Clever.					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2011/04/02/non-techie-guide-to-setting-up-django-apache-mysql-on-amazon-ec2/" class="bump-view" data-bump-view="tp">
+						Non-techie Guide to setting up Django, Apache, MySQL on Amazon EC2					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/about/" class="bump-view" data-bump-view="tp">
+						About					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2011/04/23/a-basic-django-workflow/" class="bump-view" data-bump-view="tp">
+						A Basic Django Workflow					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2011/02/21/similarities-between-an-entrepreneur-and-an-academic/" class="bump-view" data-bump-view="tp">
+						Similarities between an Entrepreneur and an Academic					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2011/07/16/django-selectdatewidget-selectmonthyear-and-selectdatetime-widgets/" class="bump-view" data-bump-view="tp">
+						Django SelectDateWidget , SelectMonthYear and SelectDatetime Widgets					</a>
+									</li>
+							<li>
+										<a href="https://pragmaticstartup.wordpress.com/2012/09/30/django-core-exceptions-improperlyconfigured-could-not-import-user-defined-geometry_backend-geos/" class="bump-view" data-bump-view="tp">
+						django.core.exceptions.ImproperlyConfigured: Could not import user-defined GEOMETRY_BACKEND "geos".					</a>
+									</li>
+			</ul></aside><aside id="linkcat-1356" class="widget widget_links"><h1 class="widget-title">Blogroll</h1>
+	<ul class="xoxo blogroll">
+<li><a href="http://diapercakes.sg/" title="Diaper Cake Singapore and Baby Shower Gifts">Baby Shower Gifts Singapore</a></li>
+<li><a href="http://www.bernardleong.com/" target="_blank">Bernard Leong</a></li>
+<li><a href="http://www2.blk71.com/" title="Best startup coworking space in Singapore" target="_blank">Blk71 Coworking Space</a></li>
+<li><a href="http://bosslee.co/" target="_blank">Bryan 'Boss' Lee</a></li>
+<li><a href="http://www.calvinx.com/">Calvinx</a></li>
+<li><a href="http://chinpen.net/" rel="friend" target="_blank">Chinmay</a></li>
+<li><a href="http://www.suddenlycat.com/" target="_blank">Gifts For Cat Lovers</a></li>
+<li><a href="http://kienmlee.com/" target="_blank">Kien Lee</a></li>
+<li><a href="http://blog.mugunthkumar.com/">Mugunth Kumar</a></li>
+<li><a href="http://www.muhuk.com/" target="_blank">Muhuk</a></li>
+<li><a href="http://sayan.ee/" rel="friend">Sayanee</a></li>
+<li><a href="http://subhb.org/" target="_blank">Subh</a></li>
+<li><a href="http://therealjohntan.wordpress.com/" target="_blank">The Real John Tan</a></li>
+
+	</ul>
+</aside>
+<aside id="archives-4" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href="https://pragmaticstartup.wordpress.com/2017/04/">April 2017</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2015/12/">December 2015</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2015/10/">October 2015</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2015/08/">August 2015</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2015/06/">June 2015</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2015/04/">April 2015</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2015/03/">March 2015</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2014/08/">August 2014</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2014/06/">June 2014</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2014/05/">May 2014</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2014/04/">April 2014</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2014/03/">March 2014</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2014/02/">February 2014</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2014/01/">January 2014</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/11/">November 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/09/">September 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/08/">August 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/07/">July 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/06/">June 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/05/">May 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/04/">April 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/03/">March 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/02/">February 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2013/01/">January 2013</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/12/">December 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/11/">November 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/10/">October 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/09/">September 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/08/">August 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/06/">June 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/05/">May 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/04/">April 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/03/">March 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/02/">February 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2012/01/">January 2012</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/12/">December 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/11/">November 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/10/">October 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/09/">September 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/08/">August 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/07/">July 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/06/">June 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/05/">May 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/04/">April 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/03/">March 2011</a></li>
+	<li><a href="https://pragmaticstartup.wordpress.com/2011/02/">February 2011</a></li>
+		</ul>
+		</aside><aside id="internet_defense_league_widget-2" class="widget widget_internet_defense_league_widget"><p><a href="https://internetdefenseleague.org/"><img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/shield_badge.png" alt="Member of The Internet Defense League" style="max-width: 100%; height: auto;"></a></p></aside>	</div><!-- #secondary -->
+
+	</div><!-- #main -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.com/?ref=footer_website">Create a free website or blog at WordPress.com.</a>
+			
+					</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type="text/javascript" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-7c060d52bbe0c18c41b8231aba5679a4">
+	</div>
+	<div class="grofile-hash-map-c1c52d7ac74d997eca76e881af64f84b">
+	</div>
+	<div class="grofile-hash-map-7683f26bb7b5cf74cca8056825624498">
+	</div>
+	<div class="grofile-hash-map-1c631e1e0c46dc34f3c7b22133ae8531">
+	</div>
+	<div class="grofile-hash-map-fe0f9900964c4cce4f2f0c397a2a6c6f">
+	</div>
+	<div class="grofile-hash-map-30fda14832349dda80ddde4713c66226">
+	</div>
+	<div class="grofile-hash-map-91c247d8d64e5a4c4a286efc094d4773">
+	</div>
+	<div class="grofile-hash-map-7add8c9435490bb0981867a992dd1baf">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/pragmaticstartup.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/pragmaticstartup.wordpress.com\/wp-login.php?action=logout&_wpnonce=e1b2a31ddd","homeURL":"https:\/\/pragmaticstartup.wordpress.com\/","postID":"546","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(6)"></script>
+<script type="text/javascript" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/form.js"></script>
+<script type="text/javascript">
+	window._idl = {};
+	_idl.campaign = "";
+	_idl.variant = "banner";
+	(function() {
+		var idl = document.createElement('script');
+		idl.type = 'text/javascript';
+		idl.async = true;
+		idl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'members.internetdefenseleague.org/include/?url=' + (_idl.url || '') + '&campaign=' + (_idl.campaign || '') + '&variant=' + (_idl.variant || 'banner');
+		document.getElementsByTagName('body')[0].appendChild(idl);
+	})();
+</script><script type="text/javascript" async="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(7)"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"20015769","siteName":"pragmatic startup","siteURL":"http:\/\/pragmaticstartup.wordpress.com","icon":"<img alt='' src='https:\/\/s1.wp.com\/i\/logo\/wpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/truly-minimal","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/pragmaticstartup.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fpragmaticstartup.wordpress.com%2F2012%2F08%2F25%2Fwhat-every-new-pythondjango-web-developer-should-know-in-3-months%2F","themeURL":"https:\/\/wordpress.com\/theme\/truly-minimal\/","xhrURL":"https:\/\/pragmaticstartup.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"8036a0163e","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"e1ad0de229\" \/>","referer":"https:\/\/pragmaticstartup.wordpress.com\/2012\/08\/25\/what-every-new-pythondjango-web-developer-should-know-in-3-months\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/pragmaticstartup.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fpragmaticstartup.wordpress.com%2F2012%2F08%2F25%2Fwhat-every-new-pythondjango-web-developer-should-know-in-3-months%2F","postID":"546","shortlink":"http:\/\/wp.me\/p1lZ0Z-8O","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/pragmaticstartup.wordpress.com\/546","statsLink":"https:\/\/wordpress.com\/stats\/post\/546\/pragmaticstartup.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Truly Minimal","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in the Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 733 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/pragmaticstartup.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fpragmaticstartup.wordpress.com%2F2012%2F08%2F25%2Fwhat-every-new-pythondjango-web-developer-should-know-in-3-months%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(8)"></script><div id="actionbar" class="actnbr-pub-truly-minimal actnbr-has-follow"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="http://pragmaticstartup.wordpress.com/"><img alt="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/wpcom-gray-white.png" class="avatar avatar-50" height="50" width="50"> pragmatic startup</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://pragmaticstartup.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fpragmaticstartup.wordpress.com%2F2012%2F08%2F25%2Fwhat-every-new-pythondjango-web-developer-should-know-in-3-months%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Customize<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a></li> 					<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Sign up</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://pragmaticstartup.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fpragmaticstartup.wordpress.com%2F2012%2F08%2F25%2Fwhat-every-new-pythondjango-web-developer-should-know-in-3-months%2F">Log in</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="http://wp.me/p1lZ0Z-8O">Copy shortlink</a></li> 				    <li class="flb-report actnbr-hidden"><a href="http://en.wordpress.com/abuse/">Report this content</a></li> 				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Manage subscriptions</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="https://pragmaticstartup.wordpress.com/2012/08/25/what-every-new-pythondjango-web-developer-should-know-in-3-months/">Collapse this bar</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "pragmaticstartup.wordpress.com";
+	</script>
+	<script type="text/javascript" defer="" src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/725X1342.skimlinks.js"></script>		<iframe src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.defer = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			&lt;p class="robots-nocontent"&gt;&lt;img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=7518284&amp;c3=&amp;c4=&amp;c5=&amp;c6=&amp;c15=&amp;cv=2.0&amp;cj=1" alt="" style="display:none;" width="1" height="1" /&gt;&lt;/p&gt;
+		</noscript><script src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/w.js" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'20015769','blog_tz':'8','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'20015769','v':'wpcom','tz':'8','user_id':'0','post':'546','subd':'pragmaticstartup'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdTdvUG14Q2VDQTR4LlUsLi82dU1mai9BMlNtX111US5DUytiWEhJW2hhb3pZVFNudG1VRFVnQmROPVVBfFRDM1tna21OTnErL2FyeFNPTENiOH4uLlBaWmYzW3VhL0hHVlFpKzFUbXlUbzhyYWIsaFp5Si9NSnpfU1g0RnUuZmJRLnAwVS0xWTJFZWlSW2R4VjFEXVNUeWFXJmFydlhOZHlGcERMRWw4WWRNMWQ4fGpYVj89eGpfNjEwU3BaQ3lMUn5KYVk3MlZObVguXXNhZjJYM3plUUJaczh0aGxkVEh5biVQYloxTlp1TCthSGNNb3BUcmx8cTl2aVJtWmg2Y0ZwUjJWamEtP0JvZzUtQlhMUEd3MzZ1V2Q/Ni0='}]);
+_stq.push([ 'clickTrackerInit', '20015769', '546' ]);
+	</script>
+<noscript>&lt;img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/g.gif" alt=":)" id="wpstats"><img src="./What Every New Python_Django Web Developer Should Know in 3 Months _ pragmatic startup_files/saved_resource(9)" width="1" height="1" style="display: none;"></body></html>
